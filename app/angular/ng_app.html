@@ -1,0 +1,17 @@
+<div ng-controller="ControllerUser">
+  <form name="demoForm" ng-submit="add({user: user})">
+    <input name="firstName" ng-model="user.firstName" required>
+    <input name="lastName" ng-model="user.lastName" required>
+    <input name="eMail" ng-model="user.eMail" type="email" required>
+    <div ng-show="demoForm.eMail.$error.email">
+        <span>Adresse mail invalide</span>
+    </div>
+    <button ng-disabled="demoForm.$invalid" type="submit">Add</button>
+  </form>
+  <a ng-repeat="user in userList"
+     ui-sref="userDetail({userId : user.userId})">
+     <wt-user-info
+          wt-user="user"
+          wt-remove="remove()"></wt-user-info>
+    </a>
+</div>

@@ -1,8 +1,9 @@
 {
-    "name": "wt-djangular",
-    "version": "0.1.0",
-    "dependencies": {
-        "angular": "1.4.0",
-        "angular-mocks": "1.4.0"
-    }
+  "name": "wt-djangular",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular": "1.4.0",
+    "angular-mocks": "1.4.0",
+    "angular-ui-router": "~0.2.18"
+  }
 }
